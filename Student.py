@@ -7,7 +7,7 @@ class Student:
     def __init__(self,root):
         self.root=root
         self.root.title("Student Management System")
-        self.root.geometry("1350x700+0+0")
+        self.root.geometry("1900x950+0+0")
         self.root.config(bg="#F1F5F9")
 
         title=Label(
@@ -36,7 +36,7 @@ class Student:
         # -------Manage Frame-----------
 
         Manage_Frame=Frame(self.root,bd=4,relief=RIDGE,bg="#F1F5F9")
-        Manage_Frame.place(x=20,y=100,width=450,height=590)
+        Manage_Frame.place(x=20,y=100,width=550,height=820)
 
         m_title=Label(
             Manage_Frame,
@@ -177,7 +177,7 @@ class Student:
         # -----------Button Frame----------
 
         button_Frame=Frame(Manage_Frame,bd=4,relief=RIDGE,bg="#1E293B")
-        button_Frame.place(x=10,y=520,width=425,height=55)
+        button_Frame.place(x=10,y=740,width=525,height=55)
 
         AddButton=Button(
             button_Frame,
@@ -234,7 +234,7 @@ class Student:
         # -------------Detail Frame-------
 
         Detail_Frame=Frame(self.root,bd=4,relief=RIDGE,bg="#F1F5F9")
-        Detail_Frame.place(x=500,y=100,width=800,height=590)
+        Detail_Frame.place(x=590,y=100,width=1280,height=820)
 
         lbl_Search=Label(
             Detail_Frame,
@@ -294,7 +294,7 @@ class Student:
         # ------Table Frame---------
 
         Table_Frame=Frame(Detail_Frame,bd=4,relief=RIDGE,bg="#F1F5F9")
-        Table_Frame.place(x=10,y=70,width=760,height=500)
+        Table_Frame.place(x=10,y=70,width=1250,height=720)
 
         scroll_x=Scrollbar(Table_Frame,orient=HORIZONTAL)
         scroll_y=Scrollbar(Table_Frame,orient=VERTICAL)
@@ -322,13 +322,13 @@ class Student:
 
         self.Student_Table['show']='headings'
 
-        self.Student_Table.column("roll",width=100)
-        self.Student_Table.column("name",width=100)
-        self.Student_Table.column("email",width=100)
-        self.Student_Table.column("gender",width=100)
-        self.Student_Table.column("contact",width=100)
-        self.Student_Table.column("dob",width=100)
-        self.Student_Table.column("Address",width=150)
+        self.Student_Table.column("roll",width=140)
+        self.Student_Table.column("name",width=150)
+        self.Student_Table.column("email",width=180)
+        self.Student_Table.column("gender",width=120)
+        self.Student_Table.column("contact",width=150)
+        self.Student_Table.column("dob",width=140)
+        self.Student_Table.column("Address",width=200)
 
         self.Student_Table.pack(fill=BOTH,expand=1)
 
@@ -339,16 +339,16 @@ class Student:
             "Treeview",
             background="#FFFFFF",
             foreground="#1E293B",
-            rowheight=25,
+            rowheight=35,
             fieldbackground="#FFFFFF",
-            font=("times new roman",12)
+            font=("times new roman",14)
         )
 
         style.configure(
             "Treeview.Heading",
             background="#334155",
             foreground="#FFFFFF",
-            font=("times new roman",13,"bold")
+            font=("times new roman",15,"bold")
         )
 
         style.map(
