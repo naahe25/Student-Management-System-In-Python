@@ -18,6 +18,9 @@ A comprehensive desktop application for managing student records efficiently. Bu
 
 ## Preview
 
+![Screenshot 1](Screenshots/Screenshot%202026-05-30%20020246.png)
+![Screenshot 2](Screenshots/Screenshot%202026-05-30%20020317.png)
+![Screenshot 3](Screenshots/Screenshot%202026-05-30%20020354.png)
 
 
 ## ✨ Features
